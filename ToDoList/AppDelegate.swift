@@ -16,7 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        UIApplication.shared.statusBarStyle              = .lightContent
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().tintColor           = UIColor.white
+        UINavigationBar.appearance().barTintColor        = UIColor.init(red: 2/255.0, green: 195/255.0, blue: 154/255.0, alpha: 1)
+        
+        let taskVC   = ToDoListViewController.init(nibName: "ToDoListViewController", bundle: nil)
+        let navigationVC = UINavigationController.init(rootViewController: taskVC)
+        
+        window?.rootViewController = navigationVC
+        
         return true
     }
 

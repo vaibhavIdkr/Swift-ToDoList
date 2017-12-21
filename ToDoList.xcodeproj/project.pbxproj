@@ -14,6 +14,32 @@
 		462BCF931FEBEFB100789A01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462BCF921FEBEFB100789A01 /* Assets.xcassets */; };
 		462BCF961FEBEFB100789A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462BCF941FEBEFB100789A01 /* LaunchScreen.storyboard */; };
 		462BCFA11FEBEFB200789A01 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFA01FEBEFB200789A01 /* ToDoListTests.swift */; };
+		462BCFBB1FEBF09100789A01 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFB91FEBF09100789A01 /* Constants.swift */; };
+		462BCFBC1FEBF09100789A01 /* ToDoListExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFBA1FEBF09100789A01 /* ToDoListExtension.swift */; };
+		462BCFD01FEBF10000789A01 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFCF1FEBF10000789A01 /* ToDoViewModel.swift */; };
+		462BCFD71FEBF11000789A01 /* ToDoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFD11FEBF11000789A01 /* ToDoListViewController.xib */; };
+		462BCFD81FEBF11000789A01 /* AddNewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFD21FEBF11000789A01 /* AddNewTaskViewController.swift */; };
+		462BCFD91FEBF11000789A01 /* AddNewTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFD31FEBF11000789A01 /* AddNewTaskViewController.xib */; };
+		462BCFDA1FEBF11000789A01 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFD41FEBF11000789A01 /* TimePickerViewController.swift */; };
+		462BCFDB1FEBF11000789A01 /* TimePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFD51FEBF11000789A01 /* TimePickerViewController.xib */; };
+		462BCFDC1FEBF11000789A01 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFD61FEBF11000789A01 /* ToDoListViewController.swift */; };
+		462BCFDF1FEBF11E00789A01 /* DateCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFDD1FEBF11E00789A01 /* DateCollectionViewDataSource.swift */; };
+		462BCFE01FEBF11E00789A01 /* TaskListViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFDE1FEBF11E00789A01 /* TaskListViewDataSource.swift */; };
+		462BCFE31FEBF12900789A01 /* DateColleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFE11FEBF12900789A01 /* DateColleCollectionViewCell.swift */; };
+		462BCFE41FEBF12900789A01 /* DateColleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFE21FEBF12900789A01 /* DateColleCollectionViewCell.xib */; };
+		462BCFE61FEBF13200789A01 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFE51FEBF13200789A01 /* Date+Extensions.swift */; };
+		462BCFE71FEC02EA00789A01 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFC51FEBF0F600789A01 /* Roboto-Black.ttf */; };
+		462BCFE81FEC02EA00789A01 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFCE1FEBF0F600789A01 /* Roboto-BlackItalic.ttf */; };
+		462BCFE91FEC02EA00789A01 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFC81FEBF0F600789A01 /* Roboto-Bold.ttf */; };
+		462BCFEA1FEC02EA00789A01 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFCB1FEBF0F600789A01 /* Roboto-BoldItalic.ttf */; };
+		462BCFEB1FEC02EA00789A01 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFC31FEBF0F500789A01 /* Roboto-Italic.ttf */; };
+		462BCFEC1FEC02EA00789A01 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFC91FEBF0F600789A01 /* Roboto-Light.ttf */; };
+		462BCFED1FEC02EA00789A01 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFCC1FEBF0F600789A01 /* Roboto-LightItalic.ttf */; };
+		462BCFEE1FEC02EA00789A01 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFC71FEBF0F600789A01 /* Roboto-Medium.ttf */; };
+		462BCFEF1FEC02EA00789A01 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFC61FEBF0F600789A01 /* Roboto-MediumItalic.ttf */; };
+		462BCFF01FEC02EA00789A01 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFCA1FEBF0F600789A01 /* Roboto-Regular.ttf */; };
+		462BCFF11FEC02EA00789A01 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFCD1FEBF0F600789A01 /* Roboto-Thin.ttf */; };
+		462BCFF21FEC02EA00789A01 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFC41FEBF0F500789A01 /* Roboto-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +64,32 @@
 		462BCF9C1FEBEFB200789A01 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		462BCFA01FEBEFB200789A01 /* ToDoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTests.swift; sourceTree = "<group>"; };
 		462BCFA21FEBEFB200789A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		462BCFB91FEBF09100789A01 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		462BCFBA1FEBF09100789A01 /* ToDoListExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListExtension.swift; sourceTree = "<group>"; };
+		462BCFC31FEBF0F500789A01 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		462BCFC41FEBF0F500789A01 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		462BCFC51FEBF0F600789A01 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		462BCFC61FEBF0F600789A01 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		462BCFC71FEBF0F600789A01 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		462BCFC81FEBF0F600789A01 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		462BCFC91FEBF0F600789A01 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		462BCFCA1FEBF0F600789A01 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		462BCFCB1FEBF0F600789A01 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		462BCFCC1FEBF0F600789A01 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		462BCFCD1FEBF0F600789A01 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		462BCFCE1FEBF0F600789A01 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		462BCFCF1FEBF10000789A01 /* ToDoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
+		462BCFD11FEBF11000789A01 /* ToDoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToDoListViewController.xib; sourceTree = "<group>"; };
+		462BCFD21FEBF11000789A01 /* AddNewTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewTaskViewController.swift; sourceTree = "<group>"; };
+		462BCFD31FEBF11000789A01 /* AddNewTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewTaskViewController.xib; sourceTree = "<group>"; };
+		462BCFD41FEBF11000789A01 /* TimePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
+		462BCFD51FEBF11000789A01 /* TimePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimePickerViewController.xib; sourceTree = "<group>"; };
+		462BCFD61FEBF11000789A01 /* ToDoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		462BCFDD1FEBF11E00789A01 /* DateCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		462BCFDE1FEBF11E00789A01 /* TaskListViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewDataSource.swift; sourceTree = "<group>"; };
+		462BCFE11FEBF12900789A01 /* DateColleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateColleCollectionViewCell.swift; sourceTree = "<group>"; };
+		462BCFE21FEBF12900789A01 /* DateColleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateColleCollectionViewCell.xib; sourceTree = "<group>"; };
+		462BCFE51FEBF13200789A01 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +131,14 @@
 		462BCF871FEBEFB100789A01 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				462BCFC21FEBF0E800789A01 /* Fonts */,
+				462BCFC11FEBF0DC00789A01 /* ViewModel */,
+				462BCFC01FEBF0D000789A01 /* View Controllers */,
+				462BCFBF1FEBF0B900789A01 /* DataSource N Delegates */,
+				462BCFBE1FEBF0B200789A01 /* Cells */,
+				462BCFBD1FEBF0AA00789A01 /* Extension */,
+				462BCFB91FEBF09100789A01 /* Constants.swift */,
+				462BCFBA1FEBF09100789A01 /* ToDoListExtension.swift */,
 				462BCF881FEBEFB100789A01 /* AppDelegate.swift */,
 				462BCF8A1FEBEFB100789A01 /* ViewController.swift */,
 				462BCF8C1FEBEFB100789A01 /* Main.storyboard */,
@@ -97,6 +157,72 @@
 				462BCFA21FEBEFB200789A01 /* Info.plist */,
 			);
 			path = ToDoListTests;
+			sourceTree = "<group>";
+		};
+		462BCFBD1FEBF0AA00789A01 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				462BCFE51FEBF13200789A01 /* Date+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		462BCFBE1FEBF0B200789A01 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				462BCFE11FEBF12900789A01 /* DateColleCollectionViewCell.swift */,
+				462BCFE21FEBF12900789A01 /* DateColleCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		462BCFBF1FEBF0B900789A01 /* DataSource N Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				462BCFDD1FEBF11E00789A01 /* DateCollectionViewDataSource.swift */,
+				462BCFDE1FEBF11E00789A01 /* TaskListViewDataSource.swift */,
+			);
+			path = "DataSource N Delegates";
+			sourceTree = "<group>";
+		};
+		462BCFC01FEBF0D000789A01 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				462BCFD21FEBF11000789A01 /* AddNewTaskViewController.swift */,
+				462BCFD31FEBF11000789A01 /* AddNewTaskViewController.xib */,
+				462BCFD41FEBF11000789A01 /* TimePickerViewController.swift */,
+				462BCFD51FEBF11000789A01 /* TimePickerViewController.xib */,
+				462BCFD61FEBF11000789A01 /* ToDoListViewController.swift */,
+				462BCFD11FEBF11000789A01 /* ToDoListViewController.xib */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		462BCFC11FEBF0DC00789A01 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				462BCFCF1FEBF10000789A01 /* ToDoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		462BCFC21FEBF0E800789A01 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				462BCFC51FEBF0F600789A01 /* Roboto-Black.ttf */,
+				462BCFCE1FEBF0F600789A01 /* Roboto-BlackItalic.ttf */,
+				462BCFC81FEBF0F600789A01 /* Roboto-Bold.ttf */,
+				462BCFCB1FEBF0F600789A01 /* Roboto-BoldItalic.ttf */,
+				462BCFC31FEBF0F500789A01 /* Roboto-Italic.ttf */,
+				462BCFC91FEBF0F600789A01 /* Roboto-Light.ttf */,
+				462BCFCC1FEBF0F600789A01 /* Roboto-LightItalic.ttf */,
+				462BCFC71FEBF0F600789A01 /* Roboto-Medium.ttf */,
+				462BCFC61FEBF0F600789A01 /* Roboto-MediumItalic.ttf */,
+				462BCFCA1FEBF0F600789A01 /* Roboto-Regular.ttf */,
+				462BCFCD1FEBF0F600789A01 /* Roboto-Thin.ttf */,
+				462BCFC41FEBF0F500789A01 /* Roboto-ThinItalic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +308,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				462BCFE71FEC02EA00789A01 /* Roboto-Black.ttf in Resources */,
+				462BCFE81FEC02EA00789A01 /* Roboto-BlackItalic.ttf in Resources */,
+				462BCFE91FEC02EA00789A01 /* Roboto-Bold.ttf in Resources */,
+				462BCFEA1FEC02EA00789A01 /* Roboto-BoldItalic.ttf in Resources */,
+				462BCFEB1FEC02EA00789A01 /* Roboto-Italic.ttf in Resources */,
+				462BCFEC1FEC02EA00789A01 /* Roboto-Light.ttf in Resources */,
+				462BCFED1FEC02EA00789A01 /* Roboto-LightItalic.ttf in Resources */,
+				462BCFEE1FEC02EA00789A01 /* Roboto-Medium.ttf in Resources */,
+				462BCFEF1FEC02EA00789A01 /* Roboto-MediumItalic.ttf in Resources */,
+				462BCFF01FEC02EA00789A01 /* Roboto-Regular.ttf in Resources */,
+				462BCFF11FEC02EA00789A01 /* Roboto-Thin.ttf in Resources */,
+				462BCFF21FEC02EA00789A01 /* Roboto-ThinItalic.ttf in Resources */,
+				462BCFD71FEBF11000789A01 /* ToDoListViewController.xib in Resources */,
+				462BCFDB1FEBF11000789A01 /* TimePickerViewController.xib in Resources */,
 				462BCF961FEBEFB100789A01 /* LaunchScreen.storyboard in Resources */,
+				462BCFD91FEBF11000789A01 /* AddNewTaskViewController.xib in Resources */,
 				462BCF931FEBEFB100789A01 /* Assets.xcassets in Resources */,
 				462BCF8E1FEBEFB100789A01 /* Main.storyboard in Resources */,
+				462BCFE41FEBF12900789A01 /* DateColleCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +347,16 @@
 				462BCF8B1FEBEFB100789A01 /* ViewController.swift in Sources */,
 				462BCF911FEBEFB100789A01 /* ToDoList.xcdatamodeld in Sources */,
 				462BCF891FEBEFB100789A01 /* AppDelegate.swift in Sources */,
+				462BCFE61FEBF13200789A01 /* Date+Extensions.swift in Sources */,
+				462BCFBB1FEBF09100789A01 /* Constants.swift in Sources */,
+				462BCFD01FEBF10000789A01 /* ToDoViewModel.swift in Sources */,
+				462BCFDA1FEBF11000789A01 /* TimePickerViewController.swift in Sources */,
+				462BCFD81FEBF11000789A01 /* AddNewTaskViewController.swift in Sources */,
+				462BCFDC1FEBF11000789A01 /* ToDoListViewController.swift in Sources */,
+				462BCFE31FEBF12900789A01 /* DateColleCollectionViewCell.swift in Sources */,
+				462BCFBC1FEBF09100789A01 /* ToDoListExtension.swift in Sources */,
+				462BCFE01FEBF11E00789A01 /* TaskListViewDataSource.swift in Sources */,
+				462BCFDF1FEBF11E00789A01 /* DateCollectionViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vindalkar.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -379,7 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vindalkar.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
