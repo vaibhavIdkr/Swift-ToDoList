@@ -131,15 +131,14 @@
 		462BCF871FEBEFB100789A01 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				462BCF881FEBEFB100789A01 /* AppDelegate.swift */,
+				462BCFB91FEBF09100789A01 /* Constants.swift */,
 				462BCFC21FEBF0E800789A01 /* Fonts */,
 				462BCFC11FEBF0DC00789A01 /* ViewModel */,
 				462BCFC01FEBF0D000789A01 /* View Controllers */,
 				462BCFBF1FEBF0B900789A01 /* DataSource N Delegates */,
 				462BCFBE1FEBF0B200789A01 /* Cells */,
 				462BCFBD1FEBF0AA00789A01 /* Extension */,
-				462BCFB91FEBF09100789A01 /* Constants.swift */,
-				462BCFBA1FEBF09100789A01 /* ToDoListExtension.swift */,
-				462BCF881FEBEFB100789A01 /* AppDelegate.swift */,
 				462BCF8A1FEBEFB100789A01 /* ViewController.swift */,
 				462BCF8C1FEBEFB100789A01 /* Main.storyboard */,
 				462BCF921FEBEFB100789A01 /* Assets.xcassets */,
@@ -162,6 +161,7 @@
 		462BCFBD1FEBF0AA00789A01 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				462BCFBA1FEBF09100789A01 /* ToDoListExtension.swift */,
 				462BCFE51FEBF13200789A01 /* Date+Extensions.swift */,
 			);
 			path = Extension;
