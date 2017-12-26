@@ -13,3 +13,11 @@ struct ScreenSize {
     static let width  = UIScreen.main.bounds.width;
     static let height = UIScreen.main.bounds.height;
 }
+
+struct ToDoDataModel {
+    static let category       = "category"
+    static let scheduleDate   = "reminderDate"
+    static let additionalNote = "additionalNote"
+    static let shouldRemind   = "shouldRemind"
+    static let imageName      = "imageName"
+}

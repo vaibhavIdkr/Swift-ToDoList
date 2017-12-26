@@ -15,7 +15,6 @@
 		462BCF961FEBEFB100789A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462BCF941FEBEFB100789A01 /* LaunchScreen.storyboard */; };
 		462BCFA11FEBEFB200789A01 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFA01FEBEFB200789A01 /* ToDoListTests.swift */; };
 		462BCFBB1FEBF09100789A01 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFB91FEBF09100789A01 /* Constants.swift */; };
-		462BCFBC1FEBF09100789A01 /* ToDoListExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFBA1FEBF09100789A01 /* ToDoListExtension.swift */; };
 		462BCFD01FEBF10000789A01 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFCF1FEBF10000789A01 /* ToDoViewModel.swift */; };
 		462BCFD71FEBF11000789A01 /* ToDoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFD11FEBF11000789A01 /* ToDoListViewController.xib */; };
 		462BCFD81FEBF11000789A01 /* AddNewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462BCFD21FEBF11000789A01 /* AddNewTaskViewController.swift */; };
@@ -40,6 +39,8 @@
 		462BCFF01FEC02EA00789A01 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFCA1FEBF0F600789A01 /* Roboto-Regular.ttf */; };
 		462BCFF11FEC02EA00789A01 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFCD1FEBF0F600789A01 /* Roboto-Thin.ttf */; };
 		462BCFF21FEC02EA00789A01 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 462BCFC41FEBF0F500789A01 /* Roboto-ThinItalic.ttf */; };
+		4690B0C41FF290CC00C1BC39 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4690B0C21FF290CC00C1BC39 /* Task+CoreDataClass.swift */; };
+		4690B0C51FF290CC00C1BC39 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4690B0C31FF290CC00C1BC39 /* Task+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +66,6 @@
 		462BCFA01FEBEFB200789A01 /* ToDoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTests.swift; sourceTree = "<group>"; };
 		462BCFA21FEBEFB200789A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		462BCFB91FEBF09100789A01 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		462BCFBA1FEBF09100789A01 /* ToDoListExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListExtension.swift; sourceTree = "<group>"; };
 		462BCFC31FEBF0F500789A01 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		462BCFC41FEBF0F500789A01 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		462BCFC51FEBF0F600789A01 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
@@ -90,6 +90,8 @@
 		462BCFE11FEBF12900789A01 /* DateColleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateColleCollectionViewCell.swift; sourceTree = "<group>"; };
 		462BCFE21FEBF12900789A01 /* DateColleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateColleCollectionViewCell.xib; sourceTree = "<group>"; };
 		462BCFE51FEBF13200789A01 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		4690B0C21FF290CC00C1BC39 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4690B0C31FF290CC00C1BC39 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				462BCF881FEBEFB100789A01 /* AppDelegate.swift */,
 				462BCFB91FEBF09100789A01 /* Constants.swift */,
+				4690B0C61FF29D1800C1BC39 /* CoreData Classes */,
 				462BCFC21FEBF0E800789A01 /* Fonts */,
 				462BCFC11FEBF0DC00789A01 /* ViewModel */,
 				462BCFC01FEBF0D000789A01 /* View Controllers */,
@@ -161,7 +164,6 @@
 		462BCFBD1FEBF0AA00789A01 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				462BCFBA1FEBF09100789A01 /* ToDoListExtension.swift */,
 				462BCFE51FEBF13200789A01 /* Date+Extensions.swift */,
 			);
 			path = Extension;
@@ -223,6 +225,15 @@
 				462BCFC41FEBF0F500789A01 /* Roboto-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4690B0C61FF29D1800C1BC39 /* CoreData Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4690B0C21FF290CC00C1BC39 /* Task+CoreDataClass.swift */,
+				4690B0C31FF290CC00C1BC39 /* Task+CoreDataProperties.swift */,
+			);
+			path = "CoreData Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,8 +364,9 @@
 				462BCFDA1FEBF11000789A01 /* TimePickerViewController.swift in Sources */,
 				462BCFD81FEBF11000789A01 /* AddNewTaskViewController.swift in Sources */,
 				462BCFDC1FEBF11000789A01 /* ToDoListViewController.swift in Sources */,
+				4690B0C51FF290CC00C1BC39 /* Task+CoreDataProperties.swift in Sources */,
+				4690B0C41FF290CC00C1BC39 /* Task+CoreDataClass.swift in Sources */,
 				462BCFE31FEBF12900789A01 /* DateColleCollectionViewCell.swift in Sources */,
-				462BCFBC1FEBF09100789A01 /* ToDoListExtension.swift in Sources */,
 				462BCFE01FEBF11E00789A01 /* TaskListViewDataSource.swift in Sources */,
 				462BCFDF1FEBF11E00789A01 /* DateCollectionViewDataSource.swift in Sources */,
 			);
