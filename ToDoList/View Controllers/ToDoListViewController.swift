@@ -72,9 +72,10 @@ class ToDoListViewController: UIViewController{
         }
         
         let gradientLayer = toDoViewModelInstance.gradientLayer(shouldBeHorizontal: true)
-        gradientLayer.frame = self.topView.bounds
-        self.topView.layer.insertSublayer(gradientLayer, at: 0)
-
+        gradientLayer.frame = self.view.bounds
+        topView.backgroundColor = .clear
+        //self.topView.layer.insertSublayer(gradientLayer, at: 0)
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
     }
     
     private func swingAnimation() -> CABasicAnimation {

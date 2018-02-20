@@ -14,6 +14,10 @@ struct ScreenSize {
     static let height = UIScreen.main.bounds.height;
 }
 
+enum pickerType {
+    
+}
+
 struct ToDoDataModel {
     static let category       = "category"
     static let scheduleDate   = "reminderDate"
@@ -21,3 +25,4 @@ struct ToDoDataModel {
     static let shouldRemind   = "shouldRemind"
     static let imageName      = "imageName"
 }
+

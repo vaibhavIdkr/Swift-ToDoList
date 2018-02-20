@@ -8,8 +8,11 @@
 
 import UIKit
 
-class AddNewTaskViewController: UIViewController,UITextFieldDelegate {
+class AddNewTaskViewController: UIViewController {
 
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var dateTimePicker: UIDatePicker!
+    @IBOutlet var pickerView: UIView!
     @IBOutlet weak var taskCategoryTextField: UITextField!
     @IBOutlet weak var taskDescriptionTextField: UITextField!
     @IBOutlet weak var dateTextField: UITextField!
@@ -27,13 +30,6 @@ class AddNewTaskViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-                
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMMM dd , yyyy";
-        
-        if let currentDate = Date().dateWithFormatter(formatter: formatter) {
-            self.dateTextField.text = currentDate
-        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -59,8 +55,13 @@ class AddNewTaskViewController: UIViewController,UITextFieldDelegate {
         
         taskCategoryTextField.rightView     = toDoViewModel.imageViewWithImage(image: #imageLiteral(resourceName: "downArrow"))
         taskCategoryTextField.rightViewMode = .always
-        timeTextField.rightView         = toDoViewModel.imageViewWithImage(image: #imageLiteral(resourceName: "rightArrow"))
-        timeTextField.rightViewMode     = .always
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM dd , yyyy";
+        
+        if let currentDate = Date().dateWithFormatter(formatter: formatter) {
+            self.dateTextField.text = currentDate
+        }
     }
     
     func addShadow(shadowView:UIView) -> (){
@@ -69,34 +70,6 @@ class AddNewTaskViewController: UIViewController,UITextFieldDelegate {
         shadowView.layer.shadowOffset = CGSize(width: 2.0, height: 5.0)
         shadowView.layer.shadowOpacity = 1.0
         shadowView.layer.shadowRadius = 4.0
-    }
-    
-    //MARK: - Delegates
-    //MARK:  Textfield
-    
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        
-        switch textField {
-            
-        case timeTextField:
-            
-            let timePickerVC = TimePickerViewController.init(nibName: "TimePickerViewController", bundle: nil)
-            timePickerVC.didPickTimeForReminderCallback = { hours,minutes in
-                self.timeTextField.text = "\(hours):\(minutes)"
-            }
-            self.present(timePickerVC, animated: true, completion: nil)
-            return false
-            
-        case taskCategoryTextField:
-            
-            presentCategoryActionSheet()
-            return false
-            
-        default:
-            break;
-        }
-        
-        return true
     }
     
     //MARK: - Button action
@@ -109,6 +82,17 @@ class AddNewTaskViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func onDismissViewControllerButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion:nil)
+    }
+    
+    @IBAction func onDatePickerDoneTapped(_ sender: Any) {
+        
+        //self.timeTextField.text = "\(hours):\(minutes)"
+        hideDatePickerView()
+    }
+    
+    @IBAction func onDatePickerCancelTapped(_ sender: Any) {
+        
+        hideDatePickerView()
     }
     
     //MARK: - Private Methods
@@ -156,5 +140,69 @@ class AddNewTaskViewController: UIViewController,UITextFieldDelegate {
         }
         
         return true
+    }
+}
+
+extension AddNewTaskViewController:UITextFieldDelegate {
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        
+        switch textField {
+            
+        case timeTextField:
+            
+            showPickerView(pickerMode:.time)
+            return false
+            
+        case taskCategoryTextField:
+            
+            presentCategoryActionSheet()
+            return false
+            
+        case dateTextField:
+            
+            showPickerView(pickerMode: .date)
+            return false
+            
+        default:
+            break;
+        }
+        
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false;
+    }
+}
+
+extension AddNewTaskViewController {
+    
+    func showPickerView(pickerMode:UIDatePickerMode){
+        
+        dateTimePicker.datePickerMode = pickerMode
+        
+        let pickerViewHeight:CGFloat = 250
+        let initialPickerFrame = CGRect(x: 0, y: view.height(), width: containerView.width(), height: pickerViewHeight)
+        pickerView.frame = initialPickerFrame
+        
+        if !pickerView.isDescendant(of: containerView) {
+            containerView.addSubview(pickerView)
+        }
+        
+        let newPickerFrame = CGRect(x: 0, y: containerView.height() - pickerViewHeight, width: containerView.width(), height: pickerViewHeight)
+        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: .curveLinear, animations: {
+            self.pickerView.frame = newPickerFrame
+        }, completion: nil)
+    }
+    
+    func hideDatePickerView() {
+        
+        let pickerViewHeight:CGFloat = 250
+        let initialPickerFrame = CGRect(x: 0, y: view.height(), width: containerView.width(), height: pickerViewHeight)
+        UIView.animate(withDuration: 0.4, animations: {
+            self.pickerView.frame = initialPickerFrame
+        }, completion: nil)
     }
 }

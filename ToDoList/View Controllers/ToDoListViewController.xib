@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -35,34 +35,34 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhK-Fi-fku">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="175"/>
+                    <rect key="frame" x="0.0" y="44" width="375" height="191"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedensday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hG-7F-OpA">
-                            <rect key="frame" x="327" y="36" width="79" height="17"/>
+                            <rect key="frame" x="283" y="36" width="84" height="20"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="79" id="PaT-PE-ip7"/>
-                                <constraint firstAttribute="height" constant="17" id="plD-hH-z00"/>
+                                <constraint firstAttribute="width" constant="84" id="PaT-PE-ip7"/>
+                                <constraint firstAttribute="height" constant="20" id="plD-hH-z00"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan,2017" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-8I-s83">
-                            <rect key="frame" x="327" y="56" width="69" height="17"/>
+                            <rect key="frame" x="283" y="59" width="84" height="20"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="17" id="HuT-Bs-K21"/>
-                                <constraint firstAttribute="width" constant="69" id="J4y-fV-uRY"/>
+                                <constraint firstAttribute="height" constant="20" id="HuT-Bs-K21"/>
+                                <constraint firstAttribute="width" constant="84" id="J4y-fV-uRY"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                            <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FNO-eV-zrm">
-                            <rect key="frame" x="0.0" y="122.66666666666669" width="414" height="53"/>
+                            <rect key="frame" x="0.0" y="138.66666666666666" width="375" height="53"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="53" id="Vd7-ow-9A3"/>
@@ -79,12 +79,12 @@
                             </connections>
                         </collectionView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x78-Z5-lll">
-                            <rect key="frame" x="274" y="30" width="50" height="50"/>
+                            <rect key="frame" x="210" y="30" width="70" height="60"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="422-tA-u4G"/>
-                                <constraint firstAttribute="width" constant="50" id="IRe-sQ-0Ew"/>
+                                <constraint firstAttribute="height" constant="60" id="422-tA-u4G"/>
+                                <constraint firstAttribute="width" constant="70" id="IRe-sQ-0Ew"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="44"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="50"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -103,11 +103,11 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pbx-za-wl7">
-                    <rect key="frame" x="0.0" y="174.66666666666669" width="414" height="561.33333333333326"/>
+                    <rect key="frame" x="0.0" y="235" width="375" height="543"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDh-lO-Edn">
-                    <rect key="frame" x="358" y="676" width="40" height="40"/>
+                    <rect key="frame" x="319" y="728" width="40" height="40"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="40" id="6ta-xV-6pg"/>
@@ -134,13 +134,14 @@
                 <constraint firstItem="hhK-Fi-fku" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OvN-tW-Qmg"/>
                 <constraint firstItem="hhK-Fi-fku" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Vfd-5z-xJI"/>
                 <constraint firstAttribute="trailing" secondItem="EDh-lO-Edn" secondAttribute="trailing" constant="16" id="psu-HS-YNi"/>
-                <constraint firstItem="hhK-Fi-fku" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qt2-eN-bXT"/>
-                <constraint firstAttribute="bottom" secondItem="EDh-lO-Edn" secondAttribute="bottom" constant="20" id="szL-Gj-Qyr"/>
+                <constraint firstItem="Pbx-za-wl7" firstAttribute="top" secondItem="hhK-Fi-fku" secondAttribute="bottom" id="qwn-RA-fqs"/>
+                <constraint firstItem="Pbx-za-wl7" firstAttribute="top" secondItem="hhK-Fi-fku" secondAttribute="bottom" id="t3b-gg-J9C"/>
                 <constraint firstItem="Pbx-za-wl7" firstAttribute="trailing" secondItem="kqW-DE-GWx" secondAttribute="trailing" id="tM9-4J-P4f"/>
-                <constraint firstItem="Pbx-za-wl7" firstAttribute="top" secondItem="hhK-Fi-fku" secondAttribute="bottom" id="yq2-8G-Jwx"/>
+                <constraint firstItem="hhK-Fi-fku" firstAttribute="top" secondItem="kqW-DE-GWx" secondAttribute="top" id="vcG-1R-ePZ"/>
+                <constraint firstItem="kqW-DE-GWx" firstAttribute="bottom" secondItem="EDh-lO-Edn" secondAttribute="bottom" constant="10" id="w2n-bX-7cI"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="kqW-DE-GWx"/>
-            <point key="canvasLocation" x="-592" y="-101"/>
+            <point key="canvasLocation" x="-471.5" y="-190"/>
         </view>
     </objects>
     <resources>
