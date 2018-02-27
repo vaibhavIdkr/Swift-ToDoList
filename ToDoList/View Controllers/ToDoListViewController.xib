@@ -41,7 +41,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhK-Fi-fku">
                     <rect key="frame" x="0.0" y="44" width="375" height="191"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedensday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hG-7F-OpA">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedensday" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hG-7F-OpA">
                             <rect key="frame" x="283" y="36" width="84" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="84" id="PaT-PE-ip7"/>
@@ -51,7 +51,7 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan,2017" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-8I-s83">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan,2017" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-8I-s83">
                             <rect key="frame" x="283" y="59" width="84" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="HuT-Bs-K21"/>
@@ -79,10 +79,10 @@
                             </connections>
                         </collectionView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x78-Z5-lll">
-                            <rect key="frame" x="210" y="30" width="70" height="60"/>
+                            <rect key="frame" x="221" y="30" width="57" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="422-tA-u4G"/>
-                                <constraint firstAttribute="width" constant="70" id="IRe-sQ-0Ew"/>
+                                <constraint firstAttribute="width" constant="57" id="IRe-sQ-0Ew"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="50"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,12 +94,12 @@
                         <constraint firstAttribute="trailing" secondItem="FNO-eV-zrm" secondAttribute="trailing" id="8lv-WS-I6b"/>
                         <constraint firstAttribute="bottom" secondItem="FNO-eV-zrm" secondAttribute="bottom" id="Ar8-FJ-T5z"/>
                         <constraint firstItem="FNO-eV-zrm" firstAttribute="leading" secondItem="hhK-Fi-fku" secondAttribute="leading" id="XaH-84-kjQ"/>
-                        <constraint firstItem="DDh-8I-s83" firstAttribute="leading" secondItem="x78-Z5-lll" secondAttribute="trailing" constant="3" id="dX6-P4-0Us"/>
+                        <constraint firstItem="DDh-8I-s83" firstAttribute="leading" secondItem="x78-Z5-lll" secondAttribute="trailing" constant="5" id="dX6-P4-0Us"/>
                         <constraint firstAttribute="trailing" secondItem="4hG-7F-OpA" secondAttribute="trailing" constant="8" id="kGF-G4-xre"/>
                         <constraint firstItem="x78-Z5-lll" firstAttribute="top" secondItem="hhK-Fi-fku" secondAttribute="top" constant="30" id="slu-bf-b2H"/>
                         <constraint firstItem="4hG-7F-OpA" firstAttribute="top" secondItem="hhK-Fi-fku" secondAttribute="top" constant="36" id="tUa-mJ-GwL"/>
                         <constraint firstItem="DDh-8I-s83" firstAttribute="top" secondItem="4hG-7F-OpA" secondAttribute="bottom" constant="3" id="tnp-bV-A43"/>
-                        <constraint firstItem="4hG-7F-OpA" firstAttribute="leading" secondItem="x78-Z5-lll" secondAttribute="trailing" constant="3" id="ygy-Pa-Hfi"/>
+                        <constraint firstItem="4hG-7F-OpA" firstAttribute="leading" secondItem="x78-Z5-lll" secondAttribute="trailing" constant="5" id="ygy-Pa-Hfi"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pbx-za-wl7">
@@ -141,7 +141,7 @@
                 <constraint firstItem="kqW-DE-GWx" firstAttribute="bottom" secondItem="EDh-lO-Edn" secondAttribute="bottom" constant="10" id="w2n-bX-7cI"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="kqW-DE-GWx"/>
-            <point key="canvasLocation" x="-471.5" y="-190"/>
+            <point key="canvasLocation" x="-296" y="-186"/>
         </view>
     </objects>
     <resources>

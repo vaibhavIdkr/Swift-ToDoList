@@ -27,6 +27,7 @@
                 <outlet property="addTaskButton" destination="Xwv-TQ-EMo" id="oGh-yQ-WFg"/>
                 <outlet property="bottomScheduleButtonConstraint" destination="Kbc-7X-KDT" id="Wbz-t9-kyh"/>
                 <outlet property="containerView" destination="kZU-of-TsK" id="hTa-wg-YN2"/>
+                <outlet property="dateTextField" destination="v9s-md-o96" id="9iR-Ld-he9"/>
                 <outlet property="dateTimePicker" destination="zSU-sh-JK8" id="g5I-g3-lcF"/>
                 <outlet property="pickerView" destination="QRp-ac-gYc" id="69b-rE-BlV"/>
                 <outlet property="reminderSwitch" destination="vyF-I8-Jlh" id="mHj-nm-kKl"/>
@@ -56,7 +57,7 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGR-G4-d2s">
-                            <rect key="frame" x="32" y="80" width="323" height="634"/>
+                            <rect key="frame" x="32" y="70" width="323" height="644"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGM-5c-HYt">
                                     <rect key="frame" x="30" y="83.666666666666657" width="293" height="1"/>
@@ -117,7 +118,7 @@
                                     </connections>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwv-TQ-EMo">
-                                    <rect key="frame" x="100" y="694" width="134" height="40"/>
+                                    <rect key="frame" x="100" y="704" width="134" height="40"/>
                                     <color key="backgroundColor" red="0.5490196078431373" green="0.33333333333333331" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="40" id="cJ1-dh-TSy"/>
@@ -159,6 +160,9 @@
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="e1d-ek-LG8"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -232,7 +236,7 @@
                         <constraint firstItem="Pxf-yg-MfH" firstAttribute="top" secondItem="AKd-TJ-MXG" secondAttribute="bottom" constant="20" id="5Vn-4k-Cn8"/>
                         <constraint firstAttribute="trailing" secondItem="Pxf-yg-MfH" secondAttribute="trailing" constant="40" id="I5R-qD-kvu"/>
                         <constraint firstItem="AKd-TJ-MXG" firstAttribute="centerY" secondItem="MVj-a4-6fE" secondAttribute="centerY" id="J96-d2-d1y"/>
-                        <constraint firstItem="gGR-G4-d2s" firstAttribute="top" secondItem="AKd-TJ-MXG" secondAttribute="bottom" constant="60" id="P93-nE-wQ8"/>
+                        <constraint firstItem="gGR-G4-d2s" firstAttribute="top" secondItem="AKd-TJ-MXG" secondAttribute="bottom" constant="50" id="P93-nE-wQ8"/>
                         <constraint firstAttribute="trailing" secondItem="gGR-G4-d2s" secondAttribute="trailing" constant="20" id="TfI-Xa-kHJ"/>
                         <constraint firstItem="Pxf-yg-MfH" firstAttribute="height" secondItem="kZU-of-TsK" secondAttribute="height" multiplier="0.75" constant="-11" id="UNo-Dy-Oxd"/>
                         <constraint firstItem="AKd-TJ-MXG" firstAttribute="centerX" secondItem="kZU-of-TsK" secondAttribute="centerX" constant="6" id="bLH-nq-Tct"/>

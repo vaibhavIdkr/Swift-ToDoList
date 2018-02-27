@@ -25,7 +25,6 @@ class AddNewTaskViewController: UIViewController {
     let pickderViewDataSource = TimePickerDataSource()
     let toDoViewModel = ToDoViewModel()
     
-    
     //MARK: - view life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -181,6 +180,7 @@ extension AddNewTaskViewController {
     
     func showPickerView(pickerMode:UIDatePickerMode){
         
+        dateTimePicker.minimumDate = Date()
         dateTimePicker.datePickerMode = pickerMode
         
         let pickerViewHeight:CGFloat = 250
